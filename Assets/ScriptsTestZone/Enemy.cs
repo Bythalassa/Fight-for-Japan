@@ -51,9 +51,6 @@ public class Enemy : MonoBehaviour
                 transform.position += direction * Speed * Time.deltaTime;
             }
         }
-
-
-
     }
     public void TimerToDoSmt()
     {

@@ -669,6 +669,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25e6d7524cb2d634ea66cca50eedebf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyNinjaRI
+  damage: 4
+  Target1: {fileID: 1045017522}
+  Target2: {fileID: 1635132622}
+  Speed: 3
+  isAbleToAttack: 1
+  radiusMovement: 3
+  raidusAttack: 3
+  cooldownAtaque: 1.5
+  currentTime: 2
 --- !u!212 &1158654380
 SpriteRenderer:
   serializedVersion: 2
@@ -864,15 +873,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b2e2469ceb4c1749943030f4694f9fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyNinjaRD
-  damage: 4
-  Target1: {fileID: 1045017522}
-  Target2: {fileID: 1635132622}
-  Speed: 3
-  isAbleToAttack: 1
-  radiusMovement: 3
-  raidusAttack: 3
-  cooldownAtaque: 1.5
-  currentTime: 0
+  damage2: 4
+  TargetUno: {fileID: 1045017522}
+  TargetDos: {fileID: 1635132622}
+  Speed2: 3
+  isAbleToAttack2: 1
+  radiusMovement2: 3
+  raidusAttack2: 3
+  cooldownAtaque2: 1.5
+  currentTime2: 2
 --- !u!212 &1226423011
 SpriteRenderer:
   serializedVersion: 2

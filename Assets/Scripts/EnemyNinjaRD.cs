@@ -1,20 +1,20 @@
 using UnityEngine;
-using static UnityEngine.GraphicsBuffer;
+
 
 public class EnemyNinjaRD : MonoBehaviour
 {
-    public float damage;
+    public float damage2;
 
-    public GameObject Target1; //add Espadachin
-    public GameObject Target2; //add Compita
-    public float Speed;
+    public GameObject TargetUno; //add Espadachin
+    public GameObject TargetDos; //add Compita
+    public float Speed2;
 
-    public bool isAbleToAttack = true;
-    public float radiusMovement;
-    public float raidusAttack;
+    public bool isAbleToAttack2 = true;
+    public float radiusMovement2;
+    public float raidusAttack2;
 
-    public float cooldownAtaque = 1.5f;
-    public float currentTime;
+    public float cooldownAtaque2 = 1.5f;
+    public float currentTime2;
 
 
     void Start()
@@ -24,63 +24,62 @@ public class EnemyNinjaRD : MonoBehaviour
 
     void Update()
     {
-        FollowTarget();
-        Attackcooldown();
+        if (!isAbleToAttack2)
+        {
+            currentTime2 += Time.deltaTime;
+            if (currentTime2 >= cooldownAtaque2)
+            {
+                isAbleToAttack2 = true;
+                currentTime2 = 0f;
+            }
+        }
+
+        FollowTarget2();
     }
 
-    public void FollowTarget()
+    public void FollowTarget2()
     {
-        //Logica (que target esta más cerca )
-        float distancia1 = Vector3.Distance(transform.position, Target1.transform.position); //ESPADACHIN 
-        float distancia2 = Vector3.Distance(transform.position, Target2.transform.position); //COMPITA 
+        //Logica (que target esta más cerca)
+        float distancia1 = Vector3.Distance(transform.position, TargetUno.transform.position); //ESPADACHIN 
+        float distancia2 = Vector3.Distance(transform.position, TargetDos.transform.position); //COMPITA 
 
-        GameObject targetActual = distancia1 < distancia2 ? Target1 : Target2;
+        GameObject targetActual = distancia1 < distancia2 ? TargetUno : TargetDos;
         //si distancia1 es menor elige Target1, si no elige Target2.
 
         Vector3 targetPos = targetActual.transform.position;
         Vector3 myPos = transform.position;
+        float distancia = Vector3.Distance(targetPos, myPos);
         Vector3 direction = (targetPos - myPos).normalized;
         //Guarda la posición del objetivo y la tuya,
         //luego calcula la dirección normalizada (sin magnitud) de ti hacia él.
 
-        //Logica (ataca solo en el radio derecho horizontal )
+        //Logica (ataca solo en el radio izquierdo horizontal )
         bool estaALaDerecha = targetPos.x > myPos.x;
 
-        if (Vector3.Distance(targetPos, myPos) < radiusMovement && estaALaDerecha)
-        {
-            if (Vector3.Distance(targetPos, myPos) < raidusAttack)
+        /*if (Vector3.Distance(targetPos, myPos) < radiusMovement2 && estaALaIzquierda)*/
+            if (distancia < radiusMovement2)
             {
-                if (isAbleToAttack)
+                // Solo ataca si está a la izquierda Y dentro del radio de ataque
+                if (estaALaDerecha && distancia < raidusAttack2)
                 {
-                    Debug.Log("Atacando a " + targetActual.name);
+                    if (isAbleToAttack2)
+                    {
+                        Debug.Log("Atacando a " + targetActual.name);
 
-                    Espadachin espadachin = targetActual.GetComponent<Espadachin>();
-                    Compita compita = targetActual.GetComponent<Compita>();
+                        Espadachin espadachin = targetActual.GetComponent<Espadachin>();
+                        Compita compita = targetActual.GetComponent<Compita>();
 
-                    if (espadachin != null) espadachin.Health -= damage;
-                    if (compita != null) compita.Health -= damage;
+                        if (espadachin != null) espadachin.Health -= damage2;
+                        if (compita != null) compita.Health -= damage2;
 
-                    isAbleToAttack = false;
-                    //desactiva el ataque para el cooldown
+                        isAbleToAttack2 = false;
+                        currentTime2 = 0f; // 
+                    }
+                }
+                else
+                {   // Se mueve hacia el target (cuando no ataca o target está a la derecha)
+                    transform.position += direction * Speed2 * Time.deltaTime;
                 }
             }
-            else
-            {
-                transform.position += direction * Speed * Time.deltaTime;
-            }
-        }
-    }
-
-    public void Attackcooldown()
-    {
-        currentTime += Time.deltaTime;
-        if (isAbleToAttack)
-        {
-            if (currentTime >= cooldownAtaque)
-            {
-                isAbleToAttack = true;
-                currentTime = 0f;
-            }
-        }
     }
 }

@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "E:\\UNITY\\Fight-for-Japan\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\fight-for-japan\\assets\\scriptstestzone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\fight-for-japan\\assets\\scriptstestzone\\colisionmundo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\colisionmundo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\ColisionMundo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScriptsTestZone\\ColisionMundo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\fight-for-japan\\assets\\scriptstestzone\\espadachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\espadachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\fight-for-japan\\assets\\scriptstestzone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unity\\fight-for-japan\\assets\\scriptstestzone\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\Player.cs",
               "ToolTip": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Player.cs",
               "RelativeToolTip": "Assets\\ScriptsTestZone\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-01T14:09:56.823Z",
               "IsPinned": true,
@@ -63,25 +63,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ColisionMundo.cs",
-              "DocumentMoniker": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\ColisionMundo.cs",
-              "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\ColisionMundo.cs",
-              "ToolTip": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\ColisionMundo.cs",
-              "RelativeToolTip": "Assets\\ScriptsTestZone\\ColisionMundo.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-07T11:51:26.216Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Espadachin.cs",
               "DocumentMoniker": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Espadachin.cs",
               "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\Espadachin.cs",
               "ToolTip": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Espadachin.cs",
               "RelativeToolTip": "Assets\\ScriptsTestZone\\Espadachin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-07T10:20:20.437Z",
               "EditorCaption": ""
@@ -96,7 +83,19 @@
               "RelativeToolTip": "Assets\\ScriptsTestZone\\Bullet.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T15:16:33.102Z",
+              "WhenOpened": "2026-06-01T15:16:33.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ColisionMundo.cs",
+              "DocumentMoniker": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\ColisionMundo.cs",
+              "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\ColisionMundo.cs",
+              "ToolTip": "E:\\UNITY\\Fight-for-Japan\\Assets\\ScriptsTestZone\\ColisionMundo.cs",
+              "RelativeToolTip": "Assets\\ScriptsTestZone\\ColisionMundo.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-07T12:28:44.909Z",
               "EditorCaption": ""
             }
           ]

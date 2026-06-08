@@ -36,4 +36,13 @@ public class Compita : MonoBehaviour
             startPosition.RemoveAt(0);
         }
     }
+
+    //funcion de target damage a enemy sombra + c 
+
+
+   // falta script exterior probablemente del multiplicador de daño + key SpaceBar
+
+
+
+
 }

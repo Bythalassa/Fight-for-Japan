@@ -50,4 +50,10 @@ public class Espadachin : MonoBehaviour
             estaEnSuelo = true;
         }
     }
+
+    //funcion de target damage a enemy sombra + do damage con key x
+
+
+
+
 }

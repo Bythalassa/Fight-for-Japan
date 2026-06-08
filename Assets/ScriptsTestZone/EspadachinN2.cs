@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Espadachin : MonoBehaviour
+public class EspadachinN2 : MonoBehaviour
 {
 
     public float Speed;

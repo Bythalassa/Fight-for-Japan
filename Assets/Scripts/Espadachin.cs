@@ -10,6 +10,7 @@ public class Espadachin : MonoBehaviour
     private float velocidadY = 0f;
     public float gravedad = 9.8f;
     public float fuerzaSalto = 5f;
+    public bool SaltoEjecutado { get; private set; } //esto necesita teoria de por medio pero si lo entiendo
 
     void Start()
     {
@@ -30,19 +31,17 @@ public class Espadachin : MonoBehaviour
         transform.position += direction * Speed * Time.deltaTime;
     }
 
+
     void ManejarSalto()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
-        {
-            velocidadY = fuerzaSalto;
-            estaEnSuelo = false;
-        }
+        SaltoEjecutado = false;
 
-        // Aplicar gravedad
+        if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
+            Jump();
+
         velocidadY -= gravedad * Time.deltaTime;
         transform.position += new Vector3(0, velocidadY * Time.deltaTime, 0);
 
-        // Suelo en Y = 0 (ajusta este valor a tu escena)
         if (transform.position.y <= 0f)
         {
             transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
@@ -51,9 +50,17 @@ public class Espadachin : MonoBehaviour
         }
     }
 
-    //funcion de target damage a enemy sombra
-    //+ do damage con key x
-    //ataque con espada
+    public void Jump()
+    {
+        if (!estaEnSuelo) return; // evita doble salto si se llama externamente
+        velocidadY = fuerzaSalto;
+        estaEnSuelo = false;
+        SaltoEjecutado = true;
+    }
+
+
+    //agregar funcion de ataque melee y hacer el ataque con KEY.X
+    //EL ATAQUE ES CON ESPADA
 
 
 

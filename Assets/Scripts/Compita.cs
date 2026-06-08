@@ -7,6 +7,7 @@ public class Compita : MonoBehaviour
     public List<Vector3> posiciones;
     public List<Vector3> startPosition;
     public float speed = 20.0f;
+    public float Health;
 
     private void Update()
     {

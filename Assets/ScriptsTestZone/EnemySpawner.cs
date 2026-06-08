@@ -1,3 +1,4 @@
+/*
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -18,12 +19,12 @@ public class EnemySpawner : MonoBehaviour
         
     }
 
-    public void TimerMechanic)
+    public void TimerMechanic()
     {
         spawnTimer -= Time.deltaTime;
         if (spawnTimer < 0)
         {
-            EnemySpawner();
+            EnemySpawner(); //esto esta llamando a otro scriptt
             spawnTimer = 3;
 
         }
@@ -32,7 +33,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy()
     {
-        Vector3 randomDir = new Vector3(Random.Range(-1.1f), Random.Range(-1, 1), 0).normalized;
+        Vector3 randomDir = new Vector3(Random.Range(-1.1f), Random.Range(-1, 1f), 0).normalized;
 
         Vector3 fullLengthDir = randomDir * Random.Range(0f,range);
 
@@ -45,3 +46,4 @@ public class EnemySpawner : MonoBehaviour
 
 
 }
+*/

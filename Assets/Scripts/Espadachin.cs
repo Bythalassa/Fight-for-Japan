@@ -51,7 +51,9 @@ public class Espadachin : MonoBehaviour
         }
     }
 
-    //funcion de target damage a enemy sombra + do damage con key x
+    //funcion de target damage a enemy sombra
+    //+ do damage con key x
+    //ataque con espada
 
 
 

@@ -38,6 +38,7 @@ public class Compita : MonoBehaviour
     }
 
     //funcion de target damage a enemy sombra + c 
+    // ataque melee
 
 
    // falta script exterior probablemente del multiplicador de daño + key SpaceBar

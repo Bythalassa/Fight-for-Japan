@@ -1,80 +1,53 @@
 using UnityEngine;
 
-
 public class Espadachin : MonoBehaviour
 {
-
     public SpriteRenderer sprite;
     public float Health;
     public float Speed;
 
-    //Valores de Jump()
-    private float altura = -0.5f;
-    public float gravedad = 0.5f;
-    private float velocidadY;
-
-
+    private bool estaEnSuelo = true;
+    private float velocidadY = 0f;
+    public float gravedad = 9.8f;
+    public float fuerzaSalto = 5f;
 
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-
     }
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space) && altura <= -0.5f)
-        {
-            jump();
-        }
-
-        gravityController();
+        MoverPlayer();
+        ManejarSalto();
     }
 
-    public void MoventPlayer()
+    void MoverPlayer()
     {
-        //AXix
         float x = Input.GetAxisRaw("Horizontal");
-        float y = Input.GetAxisRaw("Vertical");
 
-        Vector3 direction = new Vector3(x, y, 0);
-        direction.Normalize();
-
+        Vector3 direction = new Vector3(x, 0, 0).normalized;
         transform.position += direction * Speed * Time.deltaTime;
-
     }
 
-    void jump()
+    void ManejarSalto()
     {
-        velocidadY = 12.0f;
-    }
-    void gravityController()
-    {
-        sprite.transform.localPosition = new Vector3(0.0f, altura, 0.0f);
+        if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
+        {
+            velocidadY = fuerzaSalto;
+            estaEnSuelo = false;
+        }
 
+        // Aplicar gravedad
         velocidadY -= gravedad * Time.deltaTime;
+        transform.position += new Vector3(0, velocidadY * Time.deltaTime, 0);
 
-        altura += velocidadY * Time.deltaTime;
-
-        if (velocidadY < 0.0f)
+        // Suelo en Y = 0 (ajusta este valor a tu escena)
+        if (transform.position.y <= 0f)
         {
-            transform.position += sprite.transform.localPosition + new Vector3(0.0f, 0.5f, 0.0f);
-            sprite.transform.localPosition = new Vector3(0.0f, -0.5f, 0.0f);
-            altura = -0.5f;
-        }
-
-        if (altura <= -0.5f)
-        {
-            velocidadY = 0.0f;
-            altura = -0.5f;
+            transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+            velocidadY = 0f;
+            estaEnSuelo = true;
         }
     }
-
-
-
-
-
-
-
-
 }

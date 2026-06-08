@@ -6,12 +6,12 @@ public class Espadachin : MonoBehaviour
     public float Health;
     public float Speed;
 
-    private bool estaEnSuelo = true;
+    public bool estaEnSuelo = true;
     private float velocidadY = 0f;
     public float gravedad = 9.8f;
     public float fuerzaSalto = 5f;
-    public bool SaltoEjecutado { get; private set; } //esto necesita teoria de por medio pero si lo entiendo
-
+    public float alturaPiso = -2.5f;
+   
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -31,20 +31,19 @@ public class Espadachin : MonoBehaviour
         transform.position += direction * Speed * Time.deltaTime;
     }
 
-
+    /*
+    */
     void ManejarSalto()
     {
-        SaltoEjecutado = false;
-
         if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
             Jump();
 
         velocidadY -= gravedad * Time.deltaTime;
         transform.position += new Vector3(0, velocidadY * Time.deltaTime, 0);
 
-        if (transform.position.y <= 0f)
+        if (transform.position.y <= alturaPiso)
         {
-            transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
+            transform.position = new Vector3(transform.position.x, alturaPiso, transform.position.z);
             velocidadY = 0f;
             estaEnSuelo = true;
         }
@@ -55,7 +54,6 @@ public class Espadachin : MonoBehaviour
         if (!estaEnSuelo) return; // evita doble salto si se llama externamente
         velocidadY = fuerzaSalto;
         estaEnSuelo = false;
-        SaltoEjecutado = true;
     }
 
 

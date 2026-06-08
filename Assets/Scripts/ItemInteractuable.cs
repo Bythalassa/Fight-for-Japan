@@ -7,7 +7,8 @@ public class objetoInteractuable : MonoBehaviour
 
     public Espadachin player;
     public float timeToRespawn = 2.0f;
-    public float distanceToInteract = 4.0f;
+    public float distanceToInteract = 1.0f;
+    //yo quiero que sea menor el radio de interaccion
 
     private float timeRespawn;
     private bool interactuable = true;
@@ -20,7 +21,11 @@ public class objetoInteractuable : MonoBehaviour
 
     void Update()
     {
-        if (!interactuable)
+        // se actualiza cada frame 
+        // si la distancia es menor a la distancia de interaccion y no esta en el suelo
+        // detecta la interaccion y lo prende a true 
+
+        if (!interactuable) 
         {
             timeRespawn += Time.deltaTime;
 
@@ -34,7 +39,7 @@ public class objetoInteractuable : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
-        if (distance <= distanceToInteract && player.SaltoEjecutado)
+        if (distance <= distanceToInteract && !player.estaEnSuelo)
         {
             interactuable = false;
             sprite.enabled = false;

@@ -329,7 +329,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 640289144}
-  - component: {fileID: 640289143}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -337,21 +336,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &640289143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 640289142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a154af6edfcdf4a8d38eb40ba51219, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  EnemyPrefab: {fileID: 1462098211}
-  spawnTimer: 3
-  range: 0
 --- !u!4 &640289144
 Transform:
   m_ObjectHideFlags: 0
@@ -367,11 +351,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1462098211 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3628482539849973157, guid: 557c15aea55073e4291a7451e29ae8c7, type: 3}
-  m_PrefabInstance: {fileID: 398194421295688627}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &398194421295688627
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,12 +1,117 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Alumno\\Proyecto final\\Proyecto-final-FPPV-main\\Proyecto-final-FPPV-main\\Fight-for-Japan\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\UnityProjects\\Fight-for-Japan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scriptstestzone\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scripts\\iteminteractuable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\iteminteractuable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scripts\\espadachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\espadachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scriptstestzone\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scriptstestzone\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scripts\\enemyninjard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyninjard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|e:\\unityprojects\\fight-for-japan\\assets\\scripts\\compita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\compita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\ScriptsTestZone\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\EnemySpawner.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\ScriptsTestZone\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\ScriptsTestZone\\EnemySpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T22:28:43.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\ScriptsTestZone\\Enemy.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\ScriptsTestZone\\Enemy.cs",
+              "RelativeToolTip": "Assets\\ScriptsTestZone\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T16:45:38.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ItemInteractuable.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\ItemInteractuable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ItemInteractuable.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\ItemInteractuable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ItemInteractuable.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T16:07:14.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Espadachin.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\Espadachin.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Espadachin.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\Espadachin.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Espadachin.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T16:07:11.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyNinjaRD.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\EnemyNinjaRD.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyNinjaRD.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\EnemyNinjaRD.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EnemyNinjaRD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T16:07:05.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Compita.cs",
+              "DocumentMoniker": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\Compita.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Compita.cs",
+              "ToolTip": "E:\\UnityProjects\\Fight-for-Japan\\Assets\\Scripts\\Compita.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Compita.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-08T16:06:51.194Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

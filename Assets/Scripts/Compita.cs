@@ -14,7 +14,7 @@ public class Compita : MonoBehaviour
     private bool CanUse = false;
     public float timeToRespawn = 6.0f;
     private float timeRespawn;
-    private SpriteRenderer compita;
+    public SpriteRenderer compita;
 
     private void Start()
     {

@@ -1,50 +1,68 @@
+using Unity.Collections;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 public class Compita : MonoBehaviour
 {
     //se mueve 8 direcciones
     // Esta apagadpo hasta apretar key D
+    //Cooldown de uso para no impedir que no use Espadachin por lo menos 2 ataques seguidos
 
-
-    public float speed = 20.0f;
+    public float speed;
     public float Health;
+
+    private bool CanUse = false;
+    public float timeToRespawn = 6.0f;
+    private float timeRespawn;
+    private SpriteRenderer compita;
+
+    private void Start()
+    {
+
+    } 
+
 
     private void Update()
     {
-        if (Mouse.current.leftButton.wasPressedThisFrame)
+       
+        if (!CanUse) { compita.enabled = false; }
+        else { compita.enabled = true; }
+
+        if (LeerInteraccion()) { CanUse = true; }
+
+        if (!CanUse) 
         {
-            Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
-            addPoint(mousePosition);
-        }
+            timeRespawn += Time.deltaTime;
 
-        if (posiciones.Count > 0) MoveObject();
-    }
-    private void addPoint(Vector2 point)
-    {
-        startPosition.Add(posiciones.Count > 0 ? posiciones[posiciones.Count - 1] : gameObject.transform.position);
-        posiciones.Add(point);
-    }
-
-    private void MoveObject()
-    {
-        Vector3 dir = (posiciones[0] - startPosition[0]).normalized;
-
-        transform.position = Vector3.MoveTowards(transform.position, posiciones[0], speed * Time.deltaTime);
-
-        if (transform.position == posiciones[0])
-        {
-            posiciones.RemoveAt(0);
-            startPosition.RemoveAt(0);
+            if (timeRespawn >= timeToRespawn)
+            {
+                compita.enabled = true;
+            }
+            return;
         }
     }
 
-    //funcion de target damage a enemy sombra + c 
+    bool LeerInteraccion()
+    {
+        if (Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            CompitaMoves();
+
+        }
+        return true;
+    }
+
+    private void CompitaMoves()
+    {
+        float x = Input.GetAxisRaw("Horizontal");
+
+        Vector3 direction = new Vector3(x, 0, 0).normalized;
+        transform.position += direction * speed * Time.deltaTime;
+    }
+    
     // ataque melee
 
-
-   // falta script exterior probablemente del multiplicador de daño + key SpaceBar
-
+    // falta script exterior probablemente del multiplicador de daño + key SpaceBar
 
 
 

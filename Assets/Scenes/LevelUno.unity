@@ -1159,6 +1159,7 @@ MonoBehaviour:
   speed: 5
   Health: 15
   timeToRespawn: 6
+  compita: {fileID: 1544039482}
 --- !u!212 &1635132625
 SpriteRenderer:
   serializedVersion: 2

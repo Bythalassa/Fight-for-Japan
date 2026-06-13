@@ -20,7 +20,10 @@ public class objetoInteractuable : MonoBehaviour
     }
 
     void Update()
-    {
+    { 
+
+        // 2/3 de esta logica tiene que remplazarse 
+
         // se actualiza cada frame 
         // si la distancia es menor a la distancia de interaccion y no esta en el suelo
         // detecta la interaccion y lo prende a true 
@@ -37,6 +40,7 @@ public class objetoInteractuable : MonoBehaviour
             return;
         }
 
+        /*
         float distance = Vector3.Distance(transform.position, player.transform.position);
 
         if (distance <= distanceToInteract && !player.estaEnSuelo)
@@ -47,5 +51,7 @@ public class objetoInteractuable : MonoBehaviour
 
             player.Jump(); // el salto actúa como "obtener" el item
         }
+        */ //necesita cambiarse a reacciona a un ataque
+
     }
 }

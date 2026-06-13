@@ -6,12 +6,16 @@ public class Espadachin : MonoBehaviour
     public float Health;
     public float Speed;
 
-    public bool estaEnSuelo = true;
-    private float velocidadY = 0f;
-    public float gravedad = 9.8f;
-    public float fuerzaSalto = 5f;
-    public float alturaPiso = -2.5f;
-   
+   //El salto se elimina porque, como en el juego Fight*N Range el 
+   //Player tiene ataques con dinamismo, no necesita saltar, solo necesita dinamismo de tipo saltos y giros. 
+   //Respecto a alcanzar la lampara: el player ataca mirando hacia la pared, no necesarimanete cerca a la pared. 
+   //Una espada Se clava en el tope de la lampara, la lampara cae al suelo y se carga el power up sin necesidad de recogerla,
+   //lamapara respawn arreglada en su poscicion inicial 
+   //pero esto es desde un ataque  
+
+    //todos sus ataques son con espada
+    //
+
     void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -19,11 +23,11 @@ public class Espadachin : MonoBehaviour
 
     void Update()
     {
-        MoverPlayer();
-        ManejarSalto();
+        EspadachinMoves();
+ 
     }
 
-    void MoverPlayer()
+    void EspadachinMoves()
     {
         float x = Input.GetAxisRaw("Horizontal");
 
@@ -31,33 +35,11 @@ public class Espadachin : MonoBehaviour
         transform.position += direction * Speed * Time.deltaTime;
     }
 
-    /*
-    */
-    void ManejarSalto()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) && estaEnSuelo)
-            Jump();
 
-        velocidadY -= gravedad * Time.deltaTime;
-        transform.position += new Vector3(0, velocidadY * Time.deltaTime, 0);
-
-        if (transform.position.y <= alturaPiso)
-        {
-            transform.position = new Vector3(transform.position.x, alturaPiso, transform.position.z);
-            velocidadY = 0f;
-            estaEnSuelo = true;
-        }
-    }
-
-    public void Jump()
-    {
-        if (!estaEnSuelo) return; // evita doble salto si se llama externamente
-        velocidadY = fuerzaSalto;
-        estaEnSuelo = false;
-    }
 
 
     //agregar funcion de ataque melee y hacer el ataque con KEY.X
+
     //EL ATAQUE ES CON ESPADA
 
 

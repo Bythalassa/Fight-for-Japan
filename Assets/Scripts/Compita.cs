@@ -1,11 +1,12 @@
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class Compita : MonoBehaviour
 {
-    public List<Vector3> posiciones;
-    public List<Vector3> startPosition;
+    //se mueve 8 direcciones
+    // Esta apagadpo hasta apretar key D
+
+
     public float speed = 20.0f;
     public float Health;
 

@@ -1,11 +1,12 @@
 using UnityEngine;
 
-public class Espadachin : MonoBehaviour
+public class EspadachinManager : MonoBehaviour
 {
     public SpriteRenderer sprite;
     public float Health;
     public float Speed;
 
+    //player necesita gravedad de movimiento tipo Fight N Range + animacion con la referencia de esos monos 
 
     //El salto se elimina porque, como en el juego Fight*N Range el 
     //Player tiene ataques con dinamismo, no necesita saltar, solo necesita dinamismo de tipo saltos y giros. 
@@ -14,12 +15,9 @@ public class Espadachin : MonoBehaviour
     //lamapara respawn arreglada en su poscicion inicial 
     //pero esto es desde un ataque  
 
-    //todos sus ataques son con espada
-    //
-
     void Start()
     {
-        sprite = GetComponent<SpriteRenderer>();
+
     }
 
     void Update()
@@ -31,13 +29,13 @@ public class Espadachin : MonoBehaviour
     void EspadachinMoves()
     {
         float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
 
-        Vector3 direction = new Vector3(x, 0, 0).normalized;
+        Vector3 direction = new Vector3(x, y, 0);
+        direction.Normalize();
+
         transform.position += direction * Speed * Time.deltaTime;
     }
-
-
-
 
     //agregar funcion de ataque melee y hacer el ataque con KEY.X
 

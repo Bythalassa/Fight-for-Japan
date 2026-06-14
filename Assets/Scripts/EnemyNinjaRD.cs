@@ -56,7 +56,7 @@ public class EnemyNinjaRD : MonoBehaviour
         //Logica (ataca solo en el radio izquierdo horizontal )
         bool estaALaDerecha = targetPos.x > myPos.x;
 
-        /*if (Vector3.Distance(targetPos, myPos) < radiusMovement2 && estaALaIzquierda)*/
+        /*if (Vector3.Distance(targetPos, myPos) < radiusMovement2 && estaALaIzquierda)
             if (distancia < radiusMovement2)
             {
                 // Solo ataca si está a la izquierda Y dentro del radio de ataque
@@ -66,8 +66,8 @@ public class EnemyNinjaRD : MonoBehaviour
                     {
                         Debug.Log("Atacando a " + targetActual.name);
 
-                        Espadachin espadachin = targetActual.GetComponent<Espadachin>();
-                        Compita compita = targetActual.GetComponent<Compita>();
+                        //Espadachin espadachin = targetActual.GetComponent<Espadachin>();
+                        //Compita compita = targetActual.GetComponent<Compita>();
 
                         if (espadachin != null) espadachin.Health -= damage2;
                         if (compita != null) compita.Health -= damage2;
@@ -80,6 +80,6 @@ public class EnemyNinjaRD : MonoBehaviour
                 {   // Se mueve hacia el target (cuando no ataca o target está a la derecha)
                     transform.position += direction * Speed2 * Time.deltaTime;
                 }
-            }
+            }*/
     }
 }

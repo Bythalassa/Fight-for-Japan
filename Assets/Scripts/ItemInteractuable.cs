@@ -3,9 +3,9 @@ using UnityEngine;
 public class objetoInteractuable : MonoBehaviour
 {
 
-    //Fix (el jump en el radio de la lampara (add radius/))
+    //new logic 
 
-    public Espadachin player;
+
     public float timeToRespawn = 2.0f;
     public float distanceToInteract = 1.0f;
     //yo quiero que sea menor el radio de interaccion

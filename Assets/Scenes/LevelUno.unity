@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 111670292}
   - component: {fileID: 111670293}
   m_Layer: 0
-  m_Name: sprite
+  m_Name: espadachin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 111670291}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.2, y: -0.2192415, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -272,7 +272,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.86
+  orthographic size: 4.42
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -374,7 +374,7 @@ Transform:
   m_GameObject: {fileID: 250363919}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.4831, y: 0.3162, z: 0}
+  m_LocalPosition: {x: 5.4831, y: 1.65, z: 0}
   m_LocalScale: {x: 0.2890926, y: 0.2947332, z: 0.474}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -451,7 +451,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8e8502c17d12941b89277f0985625b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objetoInteractuable
-  player: {fileID: 1045017523}
   timeToRespawn: 2
   distanceToInteract: 4
 --- !u!1 &495273952
@@ -514,7 +513,7 @@ Transform:
   m_GameObject: {fileID: 624866440}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.6787, y: 0.2445, z: 0}
+  m_LocalPosition: {x: -3.6787, y: 1.51, z: 0}
   m_LocalScale: {x: 0.3507612, y: 0.3295518, z: 0.474}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -591,7 +590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a8e8502c17d12941b89277f0985625b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::objetoInteractuable
-  player: {fileID: 1045017523}
   timeToRespawn: 2
   distanceToInteract: 4
 --- !u!1 &1045017522
@@ -695,7 +693,7 @@ Transform:
   m_GameObject: {fileID: 1045017522}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.88, y: -2.57, z: 0}
+  m_LocalPosition: {x: -5.62, y: -1.49, z: 0}
   m_LocalScale: {x: 0.592954, y: 0.592954, z: 0.592954}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -712,7 +710,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1158654381}
   - component: {fileID: 1158654380}
-  - component: {fileID: 1158654379}
   m_Layer: 0
   m_Name: EnemyNinjaRI
   m_TagString: Untagged
@@ -720,27 +717,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1158654379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1158654378}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25e6d7524cb2d634ea66cca50eedebf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyNinjaRI
-  damage: 4
-  Target1: {fileID: 1045017522}
-  Target2: {fileID: 1635132622}
-  Speed: 6
-  isAbleToAttack: 1
-  radiusMovement: 3
-  raidusAttack: 3
-  cooldownAtaque: 1.5
-  currentTime: 2
 --- !u!212 &1158654380
 SpriteRenderer:
   serializedVersion: 2
@@ -809,7 +785,7 @@ Transform:
   m_GameObject: {fileID: 1158654378}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.48, y: -2.35, z: 0}
+  m_LocalPosition: {x: 3.49, y: -0.76, z: 0}
   m_LocalScale: {x: 0.6991035, y: 0.6991035, z: 0.6991035}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -916,7 +892,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1226423012}
   - component: {fileID: 1226423011}
-  - component: {fileID: 1226423010}
   m_Layer: 0
   m_Name: EnemyNinjaRD
   m_TagString: Untagged
@@ -924,27 +899,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1226423010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1226423009}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b2e2469ceb4c1749943030f4694f9fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyNinjaRD
-  damage2: 4
-  TargetUno: {fileID: 1045017522}
-  TargetDos: {fileID: 1635132622}
-  Speed2: 6
-  isAbleToAttack2: 1
-  radiusMovement2: 3
-  raidusAttack2: 3
-  cooldownAtaque2: 1.5
-  currentTime2: 2
 --- !u!212 &1226423011
 SpriteRenderer:
   serializedVersion: 2
@@ -1013,7 +967,7 @@ Transform:
   m_GameObject: {fileID: 1226423009}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: -2.389, z: 0}
+  m_LocalPosition: {x: -0.75, y: -0.55, z: 0}
   m_LocalScale: {x: 0.7082251, y: 0.7082251, z: 0.7082251}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1120,7 +1074,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1635132623}
   - component: {fileID: 1635132625}
-  - component: {fileID: 1635132624}
   m_Layer: 0
   m_Name: Compita
   m_TagString: Untagged
@@ -1137,29 +1090,13 @@ Transform:
   m_GameObject: {fileID: 1635132622}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.43, y: -2.83, z: 0}
+  m_LocalPosition: {x: -3.43, y: -1.44, z: 0}
   m_LocalScale: {x: 0.4080197, y: 0.4080197, z: 0.4080197}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1544039481}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1635132624
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635132622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5258d9b352b273c479e49096a24e7798, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Compita
-  speed: 5
-  Health: 15
-  timeToRespawn: 6
-  compita: {fileID: 1544039482}
 --- !u!212 &1635132625
 SpriteRenderer:
   serializedVersion: 2

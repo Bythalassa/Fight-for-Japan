@@ -53,7 +53,7 @@ public class EnemyNinjaRI : MonoBehaviour
         //Logica (ataca solo en el radio izquierdo horizontal )
         bool estaALaIzquierda = targetPos.x < myPos.x;
 
-        /*if (Vector3.Distance(targetPos, myPos) < radiusMovement2 && estaALaIzquierda)*/
+        /*if (Vector3.Distance(targetPos, myPos) < radiusMovement2 && estaALaIzquierda)
         if (distancia < radiusMovement)
             {
                 // Solo ataca si está a la izquierda Y dentro del radio de ataque
@@ -77,6 +77,6 @@ public class EnemyNinjaRI : MonoBehaviour
                 {   // Se mueve hacia el target (cuando no ataca o target está a la derecha)
                     transform.position += direction * Speed * Time.deltaTime;
             }
-        }
+        }*/
     }
 }
